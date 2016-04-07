@@ -5,9 +5,9 @@ error_reporting(E_ALL);
 
 require 'vendor/autoload.php';
 
+use Config\Config;
 use Db\Db;
 use Db\DBAbstration;
-use Config\Config;
 
 $conn = DBAbstration::getInstance();
 // $p = $conn->select("select * from user");
@@ -15,8 +15,6 @@ $conn = DBAbstration::getInstance();
 $p = new Db();
 $p->create();
 
-
-
-// use Core\Config\Config; 
+// use Core\Config\Config;
 
 // var_dump(Config::getInstance()->get('host'));
